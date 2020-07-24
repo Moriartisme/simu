@@ -1,0 +1,298 @@
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Developer/Designer Page Layout Concept | Codrops</title>
+		<meta name="description" content="A page layout concept with a developer/designer theme and a special effect" />
+		<meta name="keywords" content="template, page layout, concept, developer, designer, portfolio, effect, animation, css, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="Tiempos-Headline.otf" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+		<a href="" class="logo"><img src="https://uploads-ssl.webflow.com/5e1342665aa398dfe10cd492/5eb4074904ebab7cba0e6163_Logo%20Achylles%20-blanc%20-%20transpanret-min.png" alt="Girl in a jacket" width="230" height="auto"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+			<li><a href="#work">Our Work</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#careers">Careers</a></li>
+			<li><a href="#contact">Contact</a></li>
+		  </ul>
+		</header>
+		<div class="hero-section">
+			<h2>Evaluez votre capacité d'emprunt</h2>
+		</div>
+		
+		<div class="simulateur-emprunt">
+			<h2>Vos revenus</h2>
+
+			<div class="simulateur-header">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Vous empruntez :</p>
+				</div>
+				<div class="column" style="background-color:#bbb; cursor:pointer;">
+					<div class="alone">Seul.e</div>
+				</div>
+				<div class="column" style="background-color:#ccc; cursor:pointer;">
+					<div class="couple">Couple</div>
+				</div>
+			</div>
+			
+			<div class="simulateur-header-2">
+				<div class="column1">
+					<div style="color:transparent">a</div>
+				</div>
+				<div class="column">
+					<p>Emprunteur</p>
+				</div>
+				<div class="column">
+					<p>Co-emprunteur</p>
+				</div>
+			</div>
+
+			
+			<div class="simulateur-revenus">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Vous êtes :</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">
+					<div><input type="radio" id="persona" name="persona-type" value="CDI">
+					<label for="indie">en CDI</label>
+
+					<input type="radio" id="persona" name="persona-type" value="indie">
+					<label for="indie">Indépendant.e</label>
+
+					<input type="radio" id="persona" name="persona-type" value="cdd">
+					<label for="cdd">en CDD</label><br/>
+
+					<input type="radio" id="persona" name="persona-type" value="jobber">
+					<label for="jobber">Intérimaire</label>
+
+					<input type="radio" id="persona" name="persona-type" value="retired">
+					<label for="retired">Retraité.e</label>			
+					
+					<input type="radio" id="persona" name="persona-type" value="cdd">
+					<label for="cdd">Expatrié</label><br/>
+					
+					</div>
+				</div>
+				
+				<div class="column" id="column-couple" style="background-color:#bbb;">
+					<div><input type="radio" id="persona" name="persona-type" value="CDI">
+					<label for="indie">en CDI</label>
+
+					<input type="radio" id="persona" name="persona-type" value="indie">
+					<label for="indie">Indépendant.e</label>
+
+					<input type="radio" id="persona" name="persona-type" value="cdd">
+					<label for="cdd">en CDD</label><br/>
+
+					<input type="radio" id="persona" name="persona-type" value="jobber">
+					<label for="jobber">Intérimaire</label>
+
+					<input type="radio" id="persona" name="persona-type" value="retired">
+					<label for="retired">Retraité.e</label>			
+					
+					<input type="radio" id="persona" name="persona-type" value="cdd">
+					<label for="cdd">Expatrié</label><br/>
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="simulateur-revenus">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Votre salaire :<br/> (net avant impôt) :</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">			
+					<div class="salary"><input type="tel" id="salary-m" name="salary-m" maxlength="10" required></div>
+					<label for="months">Sur</label>
+					<input type="number" id="quantity" name="quantity" min="1" max="30"><label for="months">mois</label>			
+				</div>
+				<div class="column" id="column-couple-2" style="background-color:#bbb;">
+					<div><div class="salary"><input type="tel" id="salary-m" name="salary-m" maxlength="10" required></div>
+					<label for="months">Sur</label>
+					<input type="number" id="quantity" name="quantity" min="1" max="30"><label for="months"> mois</label></div>
+				</div>
+
+			</div>
+				
+			<div class="simulateur-revenus">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Vos primes:</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">			
+					<div class="salary"><input type="tel" id="primes" name="primes" maxlength="10" required></div>
+				</div>
+				<div class="column" id="column-couple" style="background-color:#bbb;">
+					<div class="salary"><input type="tel" id="primes" name="primes" maxlength="10" required></div>
+				</div>
+
+			</div>
+			
+			<div class="simulateur-add-revenus" style="margin-top:10px;">
+				<div class="column1" style="background-color:#aaa;">
+					<div id="ad-revenu" style="cursor: pointer;"><p>Ajouter un revenu:</p></div>
+				</div>
+				<div class="column" style="background-color:#bbb;">			
+					<div class="revenus">
+					  <p>
+						<select class="revenu-type" name="dbType">
+						  <option>Ajouter un autre revenu</option>
+						  <option value="option-1">Allocations familiales</option>
+						  <option value="option-2">Pension alimentaire reçue</option>
+						  <option value="option-3">Revenus locatifs existants</option>
+						  <option value="option-4">Revenus financiers</option>
+						</select>
+					  </p>
+					  <div class="option-a" style="display: flex;">
+						<p>
+						  Enfant.s à charge :
+						  <input type="number" name="num-child" min="0" max="30"/>
+						</p>
+						<p>
+							soit
+							<div class="salary"><input type="tel" name="allocations" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-b" style="display: flex;">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="pensions" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-c">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="locations" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-d">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="financiers" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <p align="left">
+						<input type="button" value="add" id="copy-revenu" />
+					  </p>
+					</div>
+				</div>
+			</div>
+			<div class="simulateur-add-charges" style="margin-top:10px;">
+				<div class="column1" style="background-color:#aaa;">
+					<div id="add-charges" style="cursor: pointer;"><p>Vos charges</p></div>
+				</div>
+				<div class="column" style="background-color:#bbb;">
+					<div class="charges">
+					  <p>Indiquez uniquement les charges que vous conserverez après l'opération.</p>
+					  <p>
+						<select class="charges-type" name="charges-type">
+						  <option>Ajouter une charge</option>
+						  <option value="option-10">Loyer</option>
+						  <option value="option-11">Prêt immobilier</option>
+						  <option value="option-12">Prêt immobilier locatif</option>
+						  <option value="option-13">Crédit à la consommation</option>
+						  <option value="option-14">Crédit auto/moto</option>
+						  <option value="option-15">Autre.s crédit.s</option>
+						  <option value="option-16">Pension alimentaire versée</option>
+						</select>
+					  </p>
+					  <div class="option-e" style="display: flex;">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="loyer" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-f">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="pretimmo" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-g">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="pretlocatif" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-h">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="creditconso" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-i">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="creditauto" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-j">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="autrescredit" maxlength="10" /></div>
+						</p>
+					  </div>
+					  <div class="option-k">
+						<p>
+						  Montant
+						  <div class="salary"><input type="tel" name="pensionsverse" maxlength="10" /></div>
+						</p>
+					  </div>  
+					  <p align="left">
+						<input type="button" value="add" id="copy-charges" />
+					  </p>
+					</div>
+				</div>
+			</div>
+			
+			<h2>Évaluez le montant de votre prêt immobilier</h2>
+			
+			<div class="simulateur-mensualite">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Mensualité souhaitée :</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">		
+					<input type="range" name="mensInputName" id="mensInputId" value="0" min="0" max="3000" step="50" oninput="mensOutputId.value = mensInputId.value">
+					<div class="salary"><input name="mensOutputName" id="mensOutputId" value="0"></div>
+				</div>
+			</div>
+			<div class="simulateur-duree">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Durée de votre prêt :</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">		
+					<input type="range" name="dureeInputName" id="dureeInputId" value="2" min="2" max="30" oninput="dureeOutputId.value = dureeInputId.value">
+					<div class="empduree"><input name="dureeOutputName" id="dureeOutputId" value="0"></div>
+				</div>
+			</div>
+			<div class="simulateur-rates">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Taux d'intérêt avant négociation <span class="tooltip">?<span class="tooltiptext">Nous vous proposons, par défaut, le taux moyen constaté pour un crédit de cette durée</span></span></p>
+				</div>
+				<div class="column" style="background-color:#bbb;">		
+					<div class="rts-tx"><input id="rates" value="0.75" step=".01" min="0.0"></div>
+				</div>
+			</div>
+			<div class="simulateur-insur">
+				<div class="column1" style="background-color:#aaa;">
+					<p>Taux d'assurance :</p>
+				</div>
+				<div class="column" style="background-color:#bbb;">		
+					<div class="rts-tx"><input id="insur" value="0.35" step=".01" min="0.0"></div>
+				</div>
+			</div>
+		</div>
+	
+	
+
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="logic.js"></script>
+	</body>
+</html>

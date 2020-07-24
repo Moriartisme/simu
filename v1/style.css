@@ -1,0 +1,307 @@
+@font-face {
+ font-family: "Tiempos-headline";
+ src: url("/Tiempos-Headline.otf") format("otf");
+}
+body {
+	margin: 0;
+	font-family: roboto, sans-serif;
+	background-color: #f4f4f4;
+}
+
+a {
+	color: #000;
+}
+
+/* header */
+
+.header {
+	background-color: #fabc05;
+	position: sticky;
+	width: 100%;
+	z-index: 3;
+}
+
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.header li a {
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+	text-decoration: underline;
+}
+
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.hero-section{
+	height: 400px;
+	background: #fabc05;
+	padding: 50px 50px;
+	text-align: center;
+	font-family: Tiempos-headline,sans-serif;
+    color: #fff;
+    font-size: 38px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+.hero-section h2{
+	text-align: center;
+	font-family: Tiempos-headline,sans-serif;
+    color: #fff;
+    font-size: 38px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+/* menu */
+
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+
+.header .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+	top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 20px 30px;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header .menu-icon {
+		display: none;
+	}
+}
+
+/* Simulateur */
+
+.simulateur-emprunt{
+	width: 80%;
+	margin-top: -25%;
+	margin-left: 8%;
+	background: white;
+	padding: 2% 2%;
+	box-shadow: 7px 7px 60px 0 transparent;
+	border-radius: 5px;
+}
+
+.salary{
+	display: inline-block;
+	position: relative;
+}
+
+/* position the unit to the right of the wrapper */
+.salary::after {
+	position: absolute;
+	top: 2px;
+	right: .5em;
+	transition: all .05s ease-in-out;
+}
+.salary::after {
+	content: '€/m';
+	color: #333;
+}
+.empduree{
+	display: inline-block;
+	position: relative;
+}
+
+/* position the unit to the right of the wrapper */
+.empduree::after {
+	position: absolute;
+	top: 2px;
+	right: .5em;
+	transition: all .05s ease-in-out;
+}
+.empduree::after {
+	content: 'ans';
+	color: #333;
+}
+.rts-tx{
+	display: inline-block;
+	position: relative;
+}
+
+/* position the unit to the right of the wrapper */
+.rts-tx::after {
+	position: absolute;
+	top: 2px;
+	right: .5em;
+	transition: all .05s ease-in-out;
+}
+.rts-tx::after {
+	content: '%';
+	color: #333;
+}
+
+
+.column {
+	float: left;
+	width: 40%;
+}
+.column1 {
+	float: left;
+	width: 20%;
+}
+
+.simulateur-header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-header-2:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-revenus {
+	position: relative;
+	margin-top: 10px;
+}
+.simulateur-revenus:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-add-revenus:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-add-charges:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-mensualite:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-duree:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.simulateur-rates:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#column-couple, #column-couple-2, .simulateur-header-2{
+	display: none;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 280px;
+	background-color: white;
+	color: #333;
+	font-size: 0.8em;
+	text-align: left;
+	border-radius: 2px;
+	padding: 5px 10px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
